@@ -3,14 +3,14 @@ jobs:
   build:
     working_directory: ~/python-sample
     docker:
-      - image: "cimg/python3.10.1"
+      - image: "cimg/python:3.10.1"
     steps:
       - checkout
       - run: python main.py    
   test:
     working_directory: ~/python-sample
     docker:
-      - image: "cimg/python3.10.1"
+      - image: "cimg/python:3.10.1"
     steps:
       - checkout
       - run: python main-test.py
